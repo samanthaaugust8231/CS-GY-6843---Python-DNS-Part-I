@@ -2,7 +2,7 @@ import dns.resolver
 
 # Set the IP address of the local DNS server and a public DNS server
 dns_resolver = dns.resolver.Resolver()
-local_host_ip = dns_resolver.nameservers[1]
+local_host_ip = dns_resolver.nameservers[0]
 
 real_name_server = '1.1.1.1' # Research public DNS servers to find a valid DNS server IP address to use
 
