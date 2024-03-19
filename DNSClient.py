@@ -14,7 +14,7 @@ def query_local_dns_server(domain,question_type):
     resolver.nameservers = [local_host_ip]
     answers = resolver.resolve(domain, question_type) # provide the domain and question_type
 
-    ip_address = answers[1].to_text()
+    ip_address = answers[0].to_text()
     return ip_address   
     
 # Define a function to query a public DNS server for the IP address of a given domain name
